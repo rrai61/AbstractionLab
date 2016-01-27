@@ -12,11 +12,8 @@ public class AdvancedJavaCourse extends Course{
 
     private String prerequisites;
     private double credits;
-
-    public String getPrerequisites() {
-        return prerequisites;
-    }
-
+    
+    @Override
     public void setPrerequisites(String prerequisites) {
         if(prerequisites == null || prerequisites.length() == 0) {
             JOptionPane.showMessageDialog(null,

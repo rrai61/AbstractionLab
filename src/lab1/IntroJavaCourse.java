@@ -12,7 +12,8 @@ public class IntroJavaCourse extends Course{
 
     private String prerequisites;
     private double credits;
-
+    
+    @Override
     public void setPrerequisites(String prerequisites) {
         this.prerequisites = prerequisites;
     }

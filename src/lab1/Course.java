@@ -59,5 +59,7 @@ public abstract class Course {
     public final String getPrerequisites() {
         return prerequisites;
     }
+    
+    public abstract void setPrerequisites(String prerequisites);
 
 }
