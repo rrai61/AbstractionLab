@@ -18,6 +18,7 @@ public abstract class Course {
     private String courseName;
     private String courseNumber;
     private double credits;
+    private String prerequisites;
    
     public final String getCapitalizedCourseName() {
         return this.getCourseName().toUpperCase();
@@ -43,7 +44,7 @@ public abstract class Course {
     public final void setCourseNumber(String courseNumber) {
         if(courseNumber == null || courseNumber.length() == 0) {
             JOptionPane.showMessageDialog(null,
-                    "Error: courseNumber cannot be null of empty string");
+                    "Error: courseNumber cannot be null or empty string");
             System.exit(0);
         }
         this.courseNumber = courseNumber;
@@ -54,5 +55,9 @@ public abstract class Course {
     }
      
     public abstract void setCredits(double credits);
+    
+    public final String getPrerequisites() {
+        return prerequisites;
+    }
 
 }

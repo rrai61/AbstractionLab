@@ -10,6 +10,8 @@ import javax.swing.JOptionPane;
  * @version     1.00
  */
 public class IntroToProgrammingCourse extends Course{
+    
+    private String prerequisites;
     private double credits;
     
     @Override
