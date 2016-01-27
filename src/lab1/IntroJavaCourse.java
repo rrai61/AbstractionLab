@@ -17,12 +17,7 @@ public class IntroJavaCourse extends Course{
     public void setPrerequisites(String prerequisites) {
         this.prerequisites = prerequisites;
     }
-    
-    @Override
-    public double getCredits(){
-        return credits;
-    }
-    
+
     @Override
     public void setCredits(double credits) {
         if(credits < 0.5 || credits > 4.0) {
