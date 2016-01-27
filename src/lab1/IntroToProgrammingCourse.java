@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
  * @author      ritu
  * @version     1.00
  */
-public class IntroToProgrammingCourse {
+public class IntroToProgrammingCourse extends Course{
 
     public IntroToProgrammingCourse(String courseName, String courseNumber) {
         this.setCourseName(courseName);
@@ -40,19 +40,6 @@ public class IntroToProgrammingCourse {
             System.exit(0);
         }
         this.credits = credits;
-    }
-
-    public String getCourseName() {
-        return courseName;
-    }
-
-    public final void setCourseName(String courseName) {
-        if(courseName == null || courseName.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: courseName cannot be null of empty string");
-            System.exit(0);
-        }
-        this.courseName = courseName;
     }
 
     

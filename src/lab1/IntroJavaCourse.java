@@ -6,7 +6,7 @@ package lab1;
  * @author      ritu
  * @version     1.00
  */
-public class IntroJavaCourse {
+public class IntroJavaCourse extends Course{
 
     private String prerequisites;
 
