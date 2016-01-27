@@ -14,11 +14,15 @@ import javax.swing.JOptionPane;
  * @author ritu
  */
 public abstract class Course {
+    
     private String courseName;
     private String courseNumber;
     private double credits;
    
-    
+    public String getCapitalizedCourseName() {
+        return this.getCourseName().toUpperCase();
+    }
+        
     public final String getCourseName() {
         return courseName;
     }
@@ -26,7 +30,7 @@ public abstract class Course {
     public final void setCourseName(String courseName) {
         if(courseName == null || courseName.length() == 0) {
             JOptionPane.showMessageDialog(null,
-                    "Error: courseName cannot be null of empty string");
+                    "Error: courseName cannot be null or empty string");
             System.exit(0);
         }
         this.courseName = courseName;
@@ -49,13 +53,6 @@ public abstract class Course {
         return credits;
     }
      
-    public final void setCredits(double credits) {
-        if(credits < 0.5 || credits > 4.0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: credits must be in the range 0.5 to 4.0");
-            System.exit(0);
-        }
-        this.credits = credits;
-    } 
+    public abstract void setCredits(double credits);
 
 }
