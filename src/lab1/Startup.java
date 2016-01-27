@@ -25,6 +25,8 @@ public class Startup {
         advJava.setCourseNumber("152-135");
         System.out.println(advJava.getCourseNumber());
         
+        advJava.setPrerequisites(introJava.getCourseName());
+        System.out.println(advJava.getPrerequisites());
         
     }
 }
