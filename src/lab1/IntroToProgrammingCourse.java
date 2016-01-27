@@ -16,19 +16,6 @@ public class IntroToProgrammingCourse extends Course{
         this.setCourseNumber(courseNumber);
     }
 
-    public String getCourseNumber() {
-        return courseNumber;
-    }
-
-    public final void setCourseNumber(String courseNumber) {
-        if(courseNumber == null || courseNumber.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: courseNumber cannot be null of empty string");
-            System.exit(0);
-        }
-        this.courseNumber = courseNumber;
-    }
-
     public double getCredits() {
         return credits;
     }
@@ -40,7 +27,7 @@ public class IntroToProgrammingCourse extends Course{
             System.exit(0);
         }
         this.credits = credits;
-    }
+    } 
 
     
 }
