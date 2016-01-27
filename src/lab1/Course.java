@@ -19,7 +19,7 @@ public abstract class Course {
     private String courseNumber;
     private double credits;
    
-    public String getCapitalizedCourseName() {
+    public final String getCapitalizedCourseName() {
         return this.getCourseName().toUpperCase();
     }
         
